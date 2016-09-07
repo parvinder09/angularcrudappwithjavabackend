@@ -1,0 +1,34 @@
+<div class="movies">
+		<div class="row">
+			<div class="col col-xs-3">
+			</div>
+			<div class="col col-xs-6">
+
+				<div class="add-button">
+					<a class="btn btn-primary btn-lg nodecoration" ui-sref="app.addnewmovie">Add new Movie</a>
+				</div>
+				<div class="allmovies">
+					<h2>All Movies</h2>
+													
+								<ul class="list-unstyled" ng-repeat="movie in movies">
+									<li>
+									<div class="row">
+										<div class="col col-xs-3">
+										{{movie.title}}
+										</div>
+										<div class="col col-xs-6"></div>
+										<div class="col col-xs-3">
+											<a class="btn btn-primary" ui-sref="app.movie-view({id:movie.id})">View</a>
+											<a class="btn btn-danger" ng-click="deleteMovie(movie)">Delete</a>
+										</div>
+									</div>
+									</li>
+								</ul>
+						
+				</div>
+			</div>
+			<div class="col col-xs-3">
+			</div>
+		</div>
+		
+	</div>

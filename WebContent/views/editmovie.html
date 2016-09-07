@@ -1,0 +1,33 @@
+<form class="form-horizontal" role="form" ng-submit="EditMovie()">
+<div class="form-group">
+	<label for="title" class="col-sm-2 ">Title</label>
+		<div class="col-sm-8">
+			<input type="text" ng-model="movie.title" class="form-control" id="title" placeholder="Movie Title here"/>
+		</div>
+</div>
+<div class="form-group">
+	<label for="releaseYear" class="col-sm-2 ">Release Year</label>
+		<div class="col-sm-8">
+			<input type="text" ng-model="movie.year" class="form-control" id="year" placeholder="When was the movie released?"/>
+		</div>
+</div>
+<div class="form-group">
+	<label for="director" class="col-sm-2 ">Director</label>
+		<div class="col-sm-8">
+			<input type="text" ng-model="movie.director" class="form-control" id="director" placeholder="Who directed the movie?"/>
+		</div>
+</div>
+
+<div class="form-group">
+	<label for="genre" class="col-sm-2 align-right"> Genre</label>
+		<div class="col-sm-8">
+			<input type="text" ng-model="movie.genre" class="form-control" id="title" placeholder="Movie Genre here"/>
+		</div>
+</div>
+<div class="form-group">
+	
+		<div class="col-sm-offset-2 col-sm-10">
+			<input type="submit"  class="btn btn-primary" value="Save"/>
+		</div>
+</div>
+</form>

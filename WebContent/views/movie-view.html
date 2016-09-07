@@ -1,0 +1,50 @@
+<div class="container">
+	<div class="row" >
+		<div class="col col-xs-2"></div>
+		<div class="col col-xs-8">
+			<h2>Details for Movies</h2>
+			<div class="row" >
+			<div class="col col-xs-12">
+				<div class="row">
+				<div class="col col-xs-3">
+					Movie Title
+				</div>
+				<div class="col col-xs-4"></div>
+				<div class="col col-xs-5">
+				{{movie.title}}
+				</div>
+				</div>
+				<div class="row">
+				<div class="col col-xs-5">
+					Director
+				</div>
+				<div class="col col-xs-2"></div>
+				<div class="col col-xs-5">
+				{{movie.director}}
+				</div>
+				</div>
+				<div class="row">
+				<div class="col col-xs-5">
+					Release Year
+				</div>
+				<div class="col col-xs-2"></div>
+				<div class="col col-xs-5">
+				{{movie.year}}
+				</div>
+				</div>
+				<div class="row">
+				<div class="col col-xs-5">
+					Movie Genre
+				</div>
+				<div class="col col-xs-2"></div>
+				<div class="col col-xs-5">
+				{{movie.genre}}
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="btn btn-primary" ui-sref="app.editmovie({id:movie.id})">Edit</div>
+		</div>
+		<div class="col col-xs-2"></div>
+	</div>
+</div>
